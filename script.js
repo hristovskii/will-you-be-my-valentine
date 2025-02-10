@@ -28,8 +28,9 @@ const messages = [
     "Навистина не сакаш?",
     "Бебо те молам значи...",
     "Само размисли поубаво!",
+    "Ќе бидам многу среќен ако кажеш да...",
     "Ако кажеш не, ќе бидам навистина тажен...",
-    "Ќе бидам навистина многу тажен...",
+    "Ќе бидам навистина многу многу тажен...",
     "Ќе плачам...",
     "Ок добро, ќе престанам да те прашувам...",
     "Се шалам, те молам кажи да! ❤️"
@@ -43,7 +44,7 @@ function handleNoClick() {
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    yesButton.style.fontSize = `${currentSize * 1.25}px`;
 }
 
 function handleYesClick() {
